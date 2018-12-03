@@ -1,0 +1,3 @@
+sudo /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification
+
+'This removes blocks from editing filesystem, no more autoupdates with this'
