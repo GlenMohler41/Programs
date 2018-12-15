@@ -1,0 +1,5 @@
+git config --global user.email williamsma26@vcu.edu
+git config --global user.name GlennMohler48
+git add .
+git commit -m "Add existing file"
+git push origin
