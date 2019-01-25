@@ -1,5 +1,5 @@
 /***********************************************************
-* Project 1
+* Project 1 - NameArt
 ************************************************************
 *Project Description
 *Prints My name in Code using printed characters in a Creative way.
@@ -12,7 +12,7 @@
 public class NameArt {
   public static void printHeading() {
     System.out.println("Michael Williams");
-    System.out.println("Project 1 - Name in Code.");
+    System.out.println("Project 1 - NameArt");
     System.out.println("Prints My name in Code using printed characters in a Creative way.");
     System.out.println("Version 1.24.19");
     System.out.println("CMSC255-002");
