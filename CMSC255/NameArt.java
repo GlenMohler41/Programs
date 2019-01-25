@@ -1,11 +1,12 @@
 /***********************************************************
 * Project 1
 ************************************************************
-Prints My name in Code using printed characters in a Creative way.
+*Project Description
+*Prints My name in Code using printed characters in a Creative way.
 *___________________________________
-Michael Williams
-1.24.19
-CMSC255-002
+*Michael Williams
+*1.24.19
+*CMSC255-002
 *******************************************************/
 
 public class NameArt {
