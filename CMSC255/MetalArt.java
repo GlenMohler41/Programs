@@ -6,7 +6,7 @@
 * constituent pieces
 *___________________________________
 * Michael Williams
-* 2.03.19
+* 2.05.19
 * CMSC255-002
 *******************************************************/
 //the following line imports the Scanner class
@@ -17,7 +17,7 @@ public class MetalArt {
     System.out.println("Michael Williams");
     System.out.println("MetalArt");
     System.out.println("Reads in the dimensions of a sculpture and outputs\nthe cost of said sculpture as well as the surface area of its\nconstituent pieces");
-    System.out.println("Version 2.03.19");
+    System.out.println("Version 2.05.19");
     System.out.println("CMSC255-002");
     System.out.println();
   }
