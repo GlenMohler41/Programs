@@ -82,7 +82,7 @@ public class MetalArt {
     System.out.printf("The Surface Area of the second Pyramid is %,.2f%n", secondArea);
     System.out.printf("The Surface Area of the Prism is %,.2f%n", prismArea);
     System.out.printf("The Surface Area of %s is %,.2f%n", name, totalArea);
-    System.out.printf("The Cost of %s is %,.2f%n", name, totalCost);
+    System.out.printf("The Material Cost of %s is %,.2f%n", name, totalCost);
 
 
   }
