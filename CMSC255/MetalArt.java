@@ -4,7 +4,7 @@
 * Reads in the dimensions of a sculpture and outputs
 * the cost of said sculpture as well as the surface area of its
 * constituent pieces
-*___________________________________
+* ___________________________________
 * Michael Williams
 * 2.05.19
 * CMSC255-002
