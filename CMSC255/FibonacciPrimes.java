@@ -24,27 +24,33 @@ public class FibonacciPrimes{
     Scanner input = new Scanner(System.in);
     int nPrimes = input.nextInt();
 
-    long num1 = 0;
+    long num1 = 1;
     long num2 = 1;
     long fib = 0;
     long divisor = 2;
 
+    System.out.println(0);
     System.out.println(num1);
+    System.out.println(num2);
 
-    while (nPrimes > 0) {
+
+    while (nPrimes > 3) {
+      divisor = 2;
       fib = num1 + num2;
       num1 = num2;
       num2 = fib;
-      while (divisor < fib) {
-        if ((fib % divisor) == 0){
-          divisor = fib + 1;
-        }
-        else if (num2 == divisor){
+      while (divisor <= fib) {
+        if (num2 == divisor){
           System.out.println(num2);
           nPrimes = nPrimes - 1;
+          divisor = fib + 6;
         }
+        else if ((fib % divisor) == 0){
+        divisor = fib + 1;
+        }
+        divisor = divisor + 1;
       }
-      divisor=2;
+
     }
   }
 }
