@@ -160,21 +160,50 @@ public class MetalChoice {
         /* The following section asks the user for the length of the first pyramid's base, the height of the first pyramid,
         the length of the second pyramid's base, the height of the second pyramid,
         and the height, length, and width of the rectangular prism. after user is
-        asked for each dimension, it is read in as a double, the name is an exception;
-        it is read in as a String */
+        asked for each dimension, it is read in as a double. a loop is included between asking the user and
+        reading input into a variable. This loop checks to see if the input is a double, if it is not,
+        it removes the bad input from the buffer and prompts the user to try again. */
         System.out.println("Enter the length of the first pyramid's base (inches)");
+        while (scan.hasNextDouble()==false){
+          System.out.println("numbers (including decimal point) only");
+          scan.next();
+        }
         double firstLength = scan.nextDouble();
         System.out.println("Enter the first pyramid's height (inches)");
+        while (scan.hasNextDouble()==false){
+          System.out.println("numbers (including decimal point) only");
+          scan.next();
+        }
         double firstHeight = scan.nextDouble();
         System.out.println("Enter the length of the second pyramid's base (inches)");
+        while (scan.hasNextDouble()==false){
+          System.out.println("numbers (including decimal point) only");
+          scan.next();
+        }
         double secondLength = scan.nextDouble();
         System.out.println("Enter the second pyramid's height (inches)");
+        while (scan.hasNextDouble()==false){
+          System.out.println("numbers (including decimal point) only");
+          scan.next();
+        }
         double secondHeight = scan.nextDouble();
         System.out.println("Enter the height of the rectangular prism (inches)");
+        while (scan.hasNextDouble()==false){
+          System.out.println("numbers (including decimal point) only");
+          scan.next();
+        }
         double prismHeight = scan.nextDouble();
         System.out.println("Enter the length of the rectangular prism (inches)");
+        while (scan.hasNextDouble()==false){
+          System.out.println("numbers (including decimal point) only");
+          scan.next();
+        }
         double prismLength = scan.nextDouble();
         System.out.println("Enter the width of the rectangular prism (inches)");
+        while (scan.hasNextDouble()==false){
+          System.out.println("numbers (including decimal point) only");
+          scan.next();
+        }
         double prismWidth = scan.nextDouble();
 
         /* The following block of code uses the following equations and the variables
@@ -200,7 +229,7 @@ public class MetalChoice {
         totalCost = totalCost + costNameplate + costLetters;
 
         /* The following block of code outputs the SA of each part to the screen,
-        the total SA, and the cost of the structure. printf is used to maintain two decimal places.
+        the total SA, and the cost of the structure. printf is used to maintain two places.
         */
         //System.out.printf("The Surface Area of the first Pyramid is %,.2f%n", firstArea);
         //System.out.printf("The Surface Area of the second Pyramid is %,.2f%n", secondArea);
