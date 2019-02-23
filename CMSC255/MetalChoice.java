@@ -58,29 +58,27 @@ public class MetalChoice {
     String stringSculptures="";
 
 
-    /* The following lines start a while loop and stringSculptures is read in from input, if it is quit, the loop and the program is ended
-    if it isn't,the numSculptures is parsed from the string as an int. inputTest is used to determine if the values read in to stringSculptures
-    are an integer*/
+    /* The following lines start a while loop and checks if the entered value is an integer, this boolean valueis used later to prevent a non integer from causing an error*/
     while (true){
       System.out.println("Please enter the number of desired sculptures or enter quit to stop the program.");
       inputTest=scan.hasNextInt();
-      stringSculptures = scan.next();
-      if (stringSculptures.equals("quit")) {
-        System.out.println("Goodbye!");
-        return;
-      }
 
-      //thefollowing lines use inputTest to refuse bad inputs
+      //thefollowing lines use inputTest to refuse bad inputs, if quit is entered, the program terminates, otherwise the loop continues until an integer is entered
       while (inputTest==false){
-        System.out.println("try again");
-        inputTest=scan.hasNextInt();
+
         stringSculptures = scan.next();
         if (stringSculptures.equals("quit")) {
           System.out.println("Goodbye!");
           return;
         }
+        System.out.println("try again");
+        inputTest=scan.hasNextInt();
       }
 
+      //The following line reads in the string that has been verified to be an integer
+      stringSculptures = scan.next();
+
+      //the following line converts the entered string to an integer
       int numSculptures = Integer.parseInt(stringSculptures);
 
       //the following lines set finalCost & discount to 0 in order to reset the cost and discount
@@ -89,11 +87,10 @@ public class MetalChoice {
 
       while (numSculptures>0){
 
-        //The following two lines ask the user for the name of their sculpture and reads it in
+        //The following three lines ask the user for the name of their sculpture and reads it in, the nextLine clears the input buffer, the second reads in the name
         System.out.println("Enter the name of your Sculpture");
         String name = scan.nextLine();
         name = scan.nextLine();
-
 
         // The following lines ask the user to enter the  desired sculpture material and changes the costMaterial accordingly in addition, it will keep looping if none of the inputs are valid
         while (true){
@@ -114,9 +111,11 @@ public class MetalChoice {
 
         // The following lines ask the user to enter the  desired nameplate material and changes the costMaterial accordingly
         // string nameplate is initialized before entering a loop that prevents bad inputs
+        // the nextLine call before the loop is used to prevent whitespace gained due to the nextLine method from affecting the equals method
         String nameplate = "";
+        scan.nextLine();
         while(true){
-          System.out.println("Please enter the desired nameplate material for your sculpture");          nameplate = scan.nextLine();
+          System.out.println("Please enter the desired nameplate material for your sculpture");
           nameplate = scan.nextLine();
           nameplate = nameplate.toLowerCase();
           if (nameplate.equals("bronze")==true){
