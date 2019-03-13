@@ -45,6 +45,7 @@ public class Chapter4LoopingProblems {
     int numberOfNumbers = 0;
 
     while (true){
+      System.out.println("Please enter a positive number, enter a negative number to end the loop");
       positiveNumber = input.nextDouble();
       if (positiveNumber <= 0){
         break;
@@ -65,9 +66,11 @@ public class Chapter4LoopingProblems {
     int currentRating = -1;
     boolean inputTest = false;
     while (currentRating != 5){
+      System.out.println("Please enter a your rating 0-4, enter 5 to end the loop");
       inputTest = input.hasNextInt();
       while (inputTest == false){
         input.next();
+        System.out.println("Please enter a your rating 0-4, enter 5 to end the loop");
         inputTest = input.hasNextInt();
       }
       currentRating = input.nextInt();
@@ -89,6 +92,7 @@ public class Chapter4LoopingProblems {
     int guess = 999;
     int target = 1 + randomNum.nextInt(100);
     while (guess != target){
+      System.out.println("Please enter your guess");
       guess = input.nextInt();
       if (guess == target){
         System.out.println("correct");

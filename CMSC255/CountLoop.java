@@ -24,6 +24,7 @@ public class CountLoop{
     printHeading();
     Scanner input = new Scanner(System.in);
 
+    System.out.println("Please type the desired n, where n is the highest number added");
     int n = input.nextInt();
 
     //The following counts the sum of 1 to 11 with a while loop

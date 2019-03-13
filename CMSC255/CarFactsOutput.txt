@@ -1,0 +1,12 @@
+Honda Civic	22.39 mpg	Value: 6812.21
+Ford Pinto	28.00 mpg	Value: 3210.38
+Mercedes A220	19.51 mpg	Value: 30011.73
+Toyota Sienna	17.14 mpg	Value: 14409.05
+Kia Sorento	20.13 mpg	Value: 9210.39
+Hyundai Santa Fe	24.26 mpg	Value: 10011.99
+Audi R8	22.49 mpg	Value: 26412.72
+Acura MDX	22.22 mpg	Value: 18412.40
+
+Best gas mileage is Ford Pinto at 28.00 mpg
+Best price is Ford Pinto at $8000.00
+Best overall value is Mercedes A220 at a score of 30011.73
